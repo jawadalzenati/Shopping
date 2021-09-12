@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp120"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_product"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/price"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintStart_toEndOf="@id/ivProductImage"
+            app:layout_constraintTop_toTopOf="@id/ivProductImage" />
+
+        <EditText
+            android:id="@+id/txtCode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:focusable="auto"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:gravity="center"
+            android:hint="@string/Code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+
+        <TextView
+            android:id="@+id/tvProductDescription"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp10"
+            app:layout_constraintBottom_toBottomOf="@id/ivProductImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvProductPrice"
+            app:layout_constraintTop_toBottomOf="@id/tvProductPrice" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/light_gry"
+            app:layout_constraintTop_toBottomOf="@id/ivProductImage" />
+
+        <TextView
+            android:id="@+id/productColors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/Color"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <Spinner
+            android:id="@+id/spColors"
+            style="@style/SpinnerLook"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            app:layout_constraintTop_toBottomOf="@+id/productColors" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/light_gry"
+            app:layout_constraintTop_toBottomOf="@id/spColors" />
+
+        <TextView
+            android:id="@+id/productSizes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/productSizes"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view2" />
+
+        <TextView
+            android:id="@+id/tvAllClothesSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginEnd="@dimen/dp5"
+            android:text="@string/AllClothesSize"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp10"
+            app:layout_constraintBottom_toBottomOf="@+id/productSizes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view2" />
+
+
+        <Spinner
+            android:id="@+id/spSizes"
+            style="@style/SpinnerLook"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            app:layout_constraintTop_toBottomOf="@+id/tvAllClothesSize" />
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/light_gry"
+            app:layout_constraintTop_toBottomOf="@id/spSizes" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="@string/count"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
+
+        <TextView
+            android:id="@+id/tvRemove"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCount"
+            app:layout_constraintEnd_toStartOf="@id/tvCount" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="?actionBarSize"
+            android:layout_height="@dimen/dp30"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:gravity="center"
+            android:text="1"
+            app:layout_constraintEnd_toStartOf="@id/tvPlus"
+            app:layout_constraintTop_toTopOf="@+id/tvPlus" />
+
+        <TextView
+            android:id="@+id/tvPlus"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp10"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:gravity="center"
+            android:text="+"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/btComplete"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:backgroundTint="@color/yellow"
+            android:text="@string/Confierm"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCount"
+            app:layout_constraintVertical_bias="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

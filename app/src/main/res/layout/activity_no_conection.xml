@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    tools:context=".NoConectionActivity">
+
+    <ImageView
+        android:id="@+id/tv"
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp150"
+        android:layout_marginBottom="?actionBarSize"
+        android:src="@drawable/no_signal"
+        android:tint="@color/gry"
+        android:padding="@dimen/dp30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/no_internet"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintTop_toBottomOf="@id/tv" />
+
+    <Button
+        android:id="@+id/btnReTry"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:backgroundTint="@color/gry"
+        android:text="@string/re_conect"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

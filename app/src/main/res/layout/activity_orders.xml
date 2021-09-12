@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    tools:context=".OrdersActivity">
+
+    <TextView
+        android:id="@+id/tvPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center"
+        android:text="@string/AllOrder"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/constrint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="@dimen/dp2"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       >
+
+
+        <TextView
+            android:id="@+id/tvComplete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_marginBottom="@dimen/dp2"
+            android:background="@drawable/un_selected"
+            android:drawableTop="@drawable/ic_order_completed"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/Complete" />
+
+        <TextView
+            android:id="@+id/tvWaiting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_marginBottom="@dimen/dp2"
+            android:background="@drawable/un_selected"
+            android:drawableTop="@drawable/ic_box"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/newOrder"
+            />
+
+        <TextView
+            android:id="@+id/tvShipped"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_marginBottom="@dimen/dp2"
+            android:background="@drawable/un_selected"
+            android:drawableTop="@drawable/ic_truck"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/Shipped"
+            />
+
+        <TextView
+            android:id="@+id/tvDismiss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_marginBottom="@dimen/dp2"
+            android:background="@drawable/un_selected"
+            android:drawableTop="@drawable/ic_warning"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/dismissed"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCompleteOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrint" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWaitingOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrint" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvShippedOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrint" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDismissed"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrint" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:src="@drawable/ic_sad"
+            android:tint="@color/gry"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_category"
+            android:textColor="@color/gry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

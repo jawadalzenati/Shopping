@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    tools:context=".WithdrawActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:gravity="center"
+        android:text="@string/withdraw"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp10">
+
+
+            <TextView
+                android:id="@+id/tvState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/withdrawText"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/liner"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/tvState">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gry"
+                    android:textSize="@dimen/sp14"
+                    android:text="@string/avilable"/>
+                <TextView
+                    android:id="@+id/tvAvilable"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:textColor="@color/gry"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp28"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gry"
+                    android:textSize="@dimen/sp14"
+                    android:text="@string/withdrawAmount"/>
+                <EditText
+                    android:id="@+id/txtAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp48"
+                    android:hint="00.00"
+                    android:gravity="center"
+                    android:background="@drawable/edit_text_shape_with_edg"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:inputType="numberDecimal"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gry"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:textSize="@dimen/sp14"
+                    android:text="@string/email"/>
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp48"
+                    android:gravity="center"
+                    android:hint="paypal account"
+                    android:background="@drawable/edit_text_shape_with_edg"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:inputType="textEmailAddress"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/nots"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note1"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/gry"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:backgroundTint="@color/yellow"
+                android:text="@string/withdraw"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/liner" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:backgroundTint="@color/gry"
+                android:gravity="center"
+                android:text="@string/can"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/liner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

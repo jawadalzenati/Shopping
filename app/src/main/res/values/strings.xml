@@ -1,0 +1,310 @@
+<resources>
+    <string name="app_name">شوبنج جو</string>
+    <string name="Home">الرئيسية</string>
+    <string name="Category">الفئات</string>
+    <string name="Account">حسابي</string>
+
+
+    <string name="facebook_app_id">557352128878431</string>
+    <string name="fb_login_protocol_scheme">fb557352128878431</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="write_something">أبحث هنا..</string>
+    <string name="recent">الأحدث</string>
+    <string name="Dresses">الفساتين</string>
+    <string name="Wedding_dresses">فساتين الزفاف</string>
+    <string name="Abayas">العبايات</string>
+    <string name="shawls">الشالات</string>
+    <string name="Short_dresses">الفساتين القصيرة</string>
+    <string name="underwear">الملابس الداخلية</string>
+    <string name="Product_Name">أسم المنتج</string>
+    <string name="MyOrders">طلباتي</string>
+    <string name="Notification">الأشعارات</string>
+    <string name="add_category">اضافة قسم رئيسي</string>
+    <string name="CategoryName">أدخل اسم القسم الجديد</string>
+    <string name="add_image">انقر لأضافة صورة</string>
+    <string name="addImage">الرجاء اضافة صورة للمتابعة</string>
+    <string name="requerd">مطلوب</string>
+    <string name="Success">تمت الأضافة بنجاح</string>
+    <string name="fail">هناك خطأ ما ! لم تتم الاضافة</string>
+    <string name="ImageAdded">تم اضافة الصورة</string>
+    <string name="category">جميع الفئات</string>
+    <string name="AddNewProduct">إضافة منتج جديد</string>
+    <string name="ReAddImage">اعادة تعين الصور</string>
+    <string name="PermissionFaild">فشل في الحصول على الأذونات</string>
+    <string name="Product_Discreption">أدخل وصف المنتج</string>
+    <string name="ProductColor">الألوان المتوفر بها المنتج : من الضروري الفصل بين الالوان بعلامة النجمة (*)</string>
+    <string name="AddCategory">الرجاء أختيار الفئة</string>
+    <string name="allReqiuerd">جميع الحقول مطلوبة!</string>
+    <string name="prodctCategory">فئة المنتج</string>
+    <string name="Product_Discrep">يتم عرض وصف المنتج الكامل ... </string>
+    <string name="empty_category">أوبس!.. لايتوفر اي عناصر حاليا</string>
+    <string name="price">السعر</string>
+    <string name="priceNumber">120.5  USD</string>
+    <string name="shear">مشاركة</string>
+    <string name="prductType">نوع المنتج</string>
+    <string name="Product_Deatails">مواصفات المنتج</string>
+    <string name="prodctSize">الاحجام المتوفر بها المنتج</string>
+    <string name="tvProductColor">الالوان المتوفر بها المنتج</string>
+    <string name="cOlor">الألوان</string>
+    <string name="size">المقاسات</string>
+    <string name="Aslo">قد يعجبك ايضا</string>
+    <string name="ProductSize">أدخل المقاسات المتوفر بها المنتج : من الضروري الفصل بين الالوان بعلامة النجمة (*)</string>
+    <string name="ClothesSize">دليل المقاسات</string>
+    <string name="AllClothesSize"> الأطلاع على الدليل الكامل ></string>
+    <string name="CompleteOrder">اتمام الطلب</string>
+    <string name="Color">أختر اللون</string>
+    <string name="productSizes">أختر المقاس</string>
+    <string name="count">الكمية</string>
+    <string name="Confierm">تأكيد</string>
+    <string name="NotAvailableCount">لا يمكن ان تكون الكمية اقل من 1</string>
+    <string name="add_address">اضافة عنوان</string>
+    <string name="FirstName">الأسم الأول</string>
+    <string name="LastName">الأسم الأخير</string>
+    <string name="Phone">رقم الهاتف :</string>
+    <string name="OtherPhoneNumber">رقم الهاتف البديل:</string>
+    <string name="AddCurrentAddress">اضافة العنوان الحالي</string>
+    <string name="AddAddressManual">اضافة العنوان يدوي</string>
+    <string name="addAddress">من فضلك اضف المحافظة مع اسم الشارع واقرب نقطة معروفة في منطقتكم</string>
+    <string name="add_address_maual">اضافة العنوان بشكل يدوي</string>
+    <string name="add_EditAddress">اضافة / تعديل العنون</string>
+    <string name="wellcome">مرحبا بكم في</string>
+    <string name="selectSignInMethod">أختر طريقة تسجيل الدخول</string>
+    <string name="facbook">تسجيل الدخول بواسطة فيس بوك</string>
+    <string name="phoneNumber">تسجيل الدخول برقم الهاتف</string>
+
+    <!--    <string name="facebook_app_id">1262488397280617</string>-->
+    <!--    <string name="fb_login_protocol_scheme">dc39968715d787e50488001164f6f44d</string>-->
+    <string name="singOut">تسجيل الخروج</string>
+    <string name="enter_phone">ادخل رقم الهاتف</string>
+    <string name="send_code">ارسال رمز التفعيل</string>
+    <string name="enter_code">أدخل رمز التفعيل</string>
+    <string name="resendCode">أعادة ارسال رمز التفعيل</string>
+    <string name="verify">تأكيد</string>
+    <string name="CompleteOrrder">تأكيد الطلب والبيانات</string>
+    <string name="name">الاسم الكامل :</string>
+    <string name="user_name">اسم صاحب الطلب</string>
+    <string name="address">العنوان المدخل:</string>
+    <string name="phones">رقم الهاتف المدخل:</string>
+    <string name="details">تفاصيل الطلب :</string>
+    <string name="paymentMethods">طريقة الدفع :</string>
+    <string name="payByHand">الدفع باليد</string>
+    <string name="payPall">الدفع بواسطة باي بال</string>
+    <string name="ConfiermOrder">اكمال الطلب</string>
+    <string name="orderNumber">رقم الطلب</string>
+    <string name="caount">الكمية</string>
+    <string name="location">تم تحديد الموقع على الخريطة</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="cancel">الغاء الطلب</string>
+    <string name="ammount">الكمية</string>
+    <string name="state">في انتظار الشحن</string>
+    <string name="theLastAdd">الأحدث:</string>
+    <string name="allProduct">الكل :</string>
+    <string name="editDelete">حذف / تعديل المنتج</string>
+    <string name="allOrder">رؤية الطلبات</string>
+    <string name="send">غير مكتمل</string>
+    <string name="AllOrder">جميع الطلبات</string>
+    <string name="paymentMethodsSelected">طريقة الدفع المحددة</string>
+    <string name="complete">تأكيد استلام وارسال الطلب</string>
+    <string name="complete2">تم ارسال الطلب</string>
+    <string name="allProducts">تعديل /حذف المنتجات</string>
+    <string name="Edit">تعديل بيانات المنتج</string>
+    <string name="favList">المفضلة</string>
+    <string name="Search">البحث</string>
+    <string name="AddNewOffer">اضافة عرض جديد</string>
+    <string name="add_newPrice">اضافة السعر الجديد</string>
+    <string name="add_image_offer">اضافة صورة العرض</string>
+    <string name="no_notifications">لايوجد اي اشعارات</string>
+    <string name="orderState">يمكنك النقر على الطلب لمعرفة مزيد من التفاصيل عنه</string>
+    <string name="OrderConfirm">تأكيد الأستلام</string>
+    <string name="LeaveFeedback">من فضلك اترك تقيمك للمنتج</string>
+    <string name="LeaveTextFeedback">شاركنا برأيك حول المنتج</string>
+    <string name="suggestions">للشكاوي والاقتراحات يمكنكم التواصل معنا :</string>
+    <string name="productRate">تقيمات الزبائن :</string>
+    <string name="allRate">مشاهدة جميع التقيمات</string>
+    <string name="NoRate">لايوجد تقيمات بعد</string>
+    <string name="call">تواصل معنا </string>
+    <string name="change">تغير العنوان الحالي</string>
+    <string name="CurrentAddress">العنوان الحالي</string>
+    <string name="can">الغاء</string>
+    <string name="default_notification_channel_id">com.shopping_jo.store</string>
+    <string name="no_internet">أوبس …  \n الرجاء التحقق من اتصال الانترنت</string>
+    <string name="re_conect">المحاولة مرة اخرى</string>
+    <string name="allProductRate">جميع الأراء والتقيمات</string>
+    <string name="txtRate">نص التقيم هنا</string>
+    <string name="GoodFeedback">منتج رائع  , مطابق للمواصفات وتوصيل سريع</string>
+    <string name="Shipped">تم الشحن</string>
+    <string name="Waiting">قيد التجهيز</string>
+    <string name="Complete">مكتمل</string>
+    <string name="newOrder">طلب جديد</string>
+    <string name="policy">السياسات والشروط</string>
+    <string name="policyApp">شروط وسياسات استخدام التطبيق :</string>
+    <string name="ShareApp">مشاركة التطبيق</string>
+    <string name="RateApp">تقيم التطبيق</string>
+    <string name="addWhatsaap">اضافة رقم واتس اب</string>
+    <string name="changeNumber">تغير الرقم الحالي</string>
+    <string name="newNumber">اضف الرقم الجديد</string>
+    <string name="title">طلب جديد</string>
+    <string name="tvSendNotification">ارسال اشعارات </string>
+    <string name="notifi_title">عنوان الاشعار</string>
+    <string name="txt">نص الاشعار</string>
+    <string name="completeWithOutSign">الأستمرار بدون تسجيل</string>
+    <string name="or">أو</string>
+    <string name="conecte">أو يمكنك التواصل معنا من خلال</string>
+    <string name="done">تمت عملية الدفع</string>
+    <string name="loc">انقر هنا لعرض عنوانك على الخريطة</string>
+    <string name="empty_result">أوبس .. لايتوفر نتائج!</string>
+    <string name="Country">الأردن</string>
+    <string name="region">المنطقة*</string>
+    <string name="stat">المحافظة*</string>
+    <string name="Countrys">البلد*</string>
+    <string name="street">الشارع*</string>
+    <string name="AddressDetails">تفاصيل العنوان</string>
+    <string name="addressDeta">رقم البناية أو اقرب مكان معروف (اختياري)</string>
+    <string name="cancelAd">الغــــاء</string>
+    <string name="users">المستخدمين</string>
+    <string name="edit">المزيد</string>
+    <string name="block">حظر طلبات المستخدم</string>
+    <string name="edit_user">تعين كمساعد</string>
+    <string name="edit_user2">ازالة التعين</string>
+    <string name="admin">تعين كمسؤول</string>
+    <string name="unBlock">ازالة الحظر</string>
+    <string name="blocked">ممنوع من الطلب</string>
+    <string name="tvAddSubCategory">اضافة قسم فرعي</string>
+    <string name="addSubCategory">اضافة قسم فرعي</string>
+    <string name="allCategory">جميع الأقسام:</string>
+    <string name="categoryName">اسم القسم</string>
+    <string name="currentNumber">الرقم الحالي</string>
+    <string name="women">ملابس نسائية</string>
+    <string name="men">ملابس رجالية</string>
+    <string name="shoos">الأحذية</string>
+    <string name="mothers">الأم والأطفال</string>
+    <string name="home">المنزل</string>
+    <string name="cartsy">القرطاسية</string>
+    <string name="allCategorys">الأقسام</string>
+    <string name="s_admin">تعين كمشرف</string>
+    <string name="payByHandAllow">هل ترغب بالسماح للدفع عبر اليد ؟</string>
+    <string name="HandAllow">الدفع باليد</string>
+    <string name="delete">حذف المنتج</string>
+    <string name="AddOffer">اضافة عرض</string>
+    <string name="MyBalance">رصيد الحساب</string>
+    <string name="add_balance">اضافة رصيد</string>
+    <string name="transactions">المعاملات</string>
+    <string name="currentBalance">الرصيد الحالي</string>
+    <string name="exampele">800</string>
+    <string name="jod2">دينار أردني</string>
+    <string name="withdrawBalance">سحب الرصيد > </string>
+    <string name="addBalance">المبلغ المراد اضافته</string>
+    <string name="googlePay">الدفع بواسطة متجر GOOGLE Play</string>
+    <string name="cancelPay">الغاء العملية</string>
+    <string name="amount">اضافة رصيد الى حسابك : </string>
+    <string name="add_balance2">سوف يتم اضافة رصدي الى حسابك بمبلغ وقدره 800 دينار ادرني من خلال باي بال هل تريد الاستمرار؟</string>
+    <string name="withdraw">سحب الرصيد</string>
+    <string name="withdrawText">يرجى العلم ان عملية السحب قد تطلب يومين عمل للأكتمال</string>
+    <string name="withdrawAmount">القيمة المراد سحبها*</string>
+    <string name="email">بريد الكتروني (باي بال فقط)</string>
+    <string name="avilable">الرصيد المتوفر :</string>
+    <string name="withdrawOrder">طلبات الدفع</string>
+    <string name="withdrawList">طلبات الدفع</string>
+    <string name="date">تاريخ الطلب</string>
+    <string name="amounts">المبلغ</string>
+    <string name="sned"> ارسال الدفعة</string>
+    <string name="ignor">تجاهل</string>
+    <string name="nots">ملاحظات هامة:</string>
+    <string name="note1">لايمكن تغير البريد  الألكتروني والأدارة ليست مسؤولة عن اي اخطاء في الأدخال</string>
+    <string name="notYet">لا يوجد طلبات بعد</string>
+    <string name="WaitingPAY">في الأنتظار</string>
+    <string name="Completed">مكتملة</string>
+    <string name="popup">النافذة المنبثقة</string>
+    <string name="looding">جاري تحميل العرض</string>
+    <string name="earn">الربح من التطبيق</string>
+    <string name="earnProgram">اهلا بك في برنامج البيع بالعمولة وتحقيق الدخل</string>
+    <string name="GetCode">الحصول على رمز لبدأ الربح</string>
+    <string name="GetMyCode">رمز جديد</string>
+    <string name="currentCode">رمزك الحالي</string>
+    <string name="copy">نسخ</string>
+
+    <string-array name="ImageNumber">
+        <item>اختر رقم العرض</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="JordanState">
+        <item>أختر المحافظة</item>
+        <item>عمان</item>
+        <item>إربد</item>
+        <item>الزرقاء</item>
+        <item>السلط</item>
+        <item>المفرق</item>
+        <item>الكرك</item>
+        <item>مادبا</item>
+        <item>جرش</item>
+        <item>عجلون</item>
+        <item>العقبة</item>
+        <item>معان</item>
+        <item>الطفيلة</item>
+    </string-array>
+
+    <string name="instraction">
+            * يجب ان تطلب من الزبون اضافة الرمز الخاص بك قبل اتمام عملية الشراء \n
+        \n
+    * سوف تحصل على 5% من قيمة كل منتج تقوم ببيعه من خلال التطبيق ويحصل الزبون على خصم 3% عند استخدام رمزك \n
+        \n
+* تضاف ارباحك بعد تأكيد الاستلام من الزبون\n
+        \n
+ * اذا ثبت ان هناك اي تلاعب يحق للأدارة تعطيل حسابك فورا\n
+        \n
+* الرمز صالح للاستخدام حتى تقوم بأنشاء رمز جديد\n
+    </string>
+    <string name="instraction2">التعليمات والارشادات</string>
+    <string name="Code">رمز تخفيض</string>
+    <string name="CodeText">اذا كان لديك اي رمز تخفيض ادخله هنا</string>
+    <string name="pyBalance">رصيد الحساب</string>
+    <string name="myOrderDetails">تفاصيل الطلب</string>
+    <string name="MyorderState">حالة الطلب : </string>
+    <string name="OrderWaiting">طلبك قيد التجهيز وسيتم ارساله قريبا</string>
+    <string name="beauty">الجمال</string>
+    <string name="electronic">إلكترونيات</string>
+    <string name="zipCode">الرمز البريدي</string>
+    <string name="Zip">الرمز البريدي *</string>
+    <string name="State">المحافظة أو المدينة</string>
+    <string name="transactionS">المعاملات والحركات</string>
+    <string name="Pinding">الدفعات المعلقة</string>
+    <string name="PindingS">تضاف الدفعات المعلقة الى حسابك عندما يقوم العميل بتأكيد استلام الطلب تلقائيا</string>
+    <string name="orderDate">تاريخ الطلب : </string>
+    <string name="cancelOrder">رفض الطلب</string>
+    <string name="dismissed">اخرى</string>
+    <string name="EnterzipCode">أدخل الرمز البريدي *</string>
+    <string name="Id">الرقم القومي*</string>
+    <string name="PersonID">الرقم الوطني (الأردنين فقط) *</string>
+    <string name="WhyID">لماذا نطلب الرقم الوطني؟!</string>
+    <string name="ok">أتفهم ذلك</string>
+    <string name="cart">السلة</string>
+    <string name="type">نوع القماش</string>
+    <string name="tirm">الفصل</string>
+    <string name="ege">العمر المناسب</string>
+    <string name="tall">طول الكم</string>
+    <string name="model">الموديل</string>
+    <string name="just">فقط قم بتعديل ما تريد تعديله واترك الباقي بدون تغيرات</string>
+    <string name="typeHere">نوع (القماش/ الجهاز)</string>
+    <string name="completeOrders">اكمال الطلبات</string>
+    <string name="orderDetails">المواصفات المحددة في الطلب</string>
+    <string name="total">الكلي: </string>
+    <string name="price10">10.00$</string>
+    <string name="add_toCart">إضافة الى العربة</string>
+    <string name="remove">ازالة من المفضلة</string>
+    <string name="totalPrice">المبلغ الكلي للدفع</string>
+    <string name="completePay">اتمام عملية الدفع</string>
+    <string name="Product_Disrp">وصف المنتج : وصف المنتج التفصيلي</string>
+    <string name="others">مواصفات اخرى:</string>
+    <string name="otherDiscrop">أوصاف اخرى</string>
+    <string name="verde_code">التحقق</string>
+    <string name="invalidNumber">رقم غير صحيح</string>
+    <string name="wrongCode">رمز خاطئ</string>
+
+</resources>

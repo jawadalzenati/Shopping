@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mBlock"
+        android:title="@string/block"
+       />
+    <item
+        android:id="@+id/unBlock"
+        android:title="@string/unBlock"
+        />
+
+
+    <item
+        android:id="@+id/mEdit"
+        android:title="@string/edit_user"
+        />
+    <item
+        android:id="@+id/mSubAdmin"
+        android:title="@string/s_admin"
+        />
+    <item
+        android:id="@+id/mAdmin"
+        android:title="@string/admin"
+        />
+
+    <item
+        android:id="@+id/mRemove"
+        android:title="@string/edit_user2"
+       />
+
+</menu>

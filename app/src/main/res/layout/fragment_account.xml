@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Fragment.AccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/tv"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center|start"
+                android:padding="@dimen/dp10"
+                android:text="@string/Account"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold" />
+
+            <include layout="@layout/user_tools" />
+
+            <include
+                android:id="@+id/admin_tools"
+                layout="@layout/admin_tools" />
+
+            <include android:id="@+id/assist_tools"
+                layout="@layout/assist_tools" />
+
+            <include android:id="@+id/sub_admin_tools"
+                layout="@layout/sub_admin" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/conecte"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintBottom_toTopOf="@id/ivFacebook" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/ivFacebook"
+            app:layout_constraintTop_toTopOf="@id/ivFacebook" />
+
+        <ImageView
+            android:id="@+id/ivWhatsApp"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_whatsapp"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivFacebook"
+            app:layout_constraintTop_toTopOf="@id/ivFacebook" />
+
+        <ImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintBottom_toTopOf="@id/tvSingOut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCall"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_call"
+            app:layout_constraintEnd_toStartOf="@id/ivFacebook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivFacebook"
+
+            />
+
+        <TextView
+            android:id="@+id/tvSingOut"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_sign_out"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:drawablePadding="@dimen/dp10"
+            android:gravity="center|start"
+            android:padding="@dimen/dp10"
+            android:text="@string/singOut"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivFacebook" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

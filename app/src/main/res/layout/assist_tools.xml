@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/assist_tools"
+    android:visibility="gone"
+    android:background="@color/light_gry"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvAddNewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:text="@string/AddNewProduct"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/gry"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:drawableStart="@drawable/ic_order"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableEnd="@drawable/ic_arrow" />
+
+
+
+    <TextView
+        android:id="@+id/tvEditDelete"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:text="@string/editDelete"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/gry"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp5"
+        android:drawableStart="@drawable/ic_rgb"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableEnd="@drawable/ic_arrow" />
+    </LinearLayout>
+
+

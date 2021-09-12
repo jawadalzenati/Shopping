@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="@dimen/dp5">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/CurrentAddress"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tvCurrentName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/title"
+        android:gravity="center|start"
+        android:text="@string/name"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tvCurrentAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCurrentName"
+        android:gravity="center|start"
+        android:layout_marginEnd="@dimen/dp48"
+        android:text="@string/add_address"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tvCurrentPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/tvCurrentAddress"
+        android:gravity="center|start"
+        android:text="@string/add_address"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp14" />
+
+    <ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="@dimen/dp48"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/tvCurrentName"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_map" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/tvCurrentPhone"
+        android:layout_marginTop="@dimen/dp10">
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp48"
+            android:layout_weight="3"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:backgroundTint="@color/yellow"
+            android:gravity="center"
+            android:text="@string/change"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp48"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:backgroundTint="@color/gry"
+            android:gravity="center"
+            android:text="@string/can"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

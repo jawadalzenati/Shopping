@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="@dimen/dp5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_shape_with_edg">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivOptions"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_more"
+            android:tint="@color/gry"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivBlocked"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_block"
+            android:tint="@color/red"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/ivOptions"
+            app:layout_constraintEnd_toEndOf="@id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:padding="@dimen/dp5"
+            android:text="الأسم : Mohammed"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:padding="@dimen/dp5"
+            android:text="رقم الهاتف : Mohammed"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:padding="@dimen/dp5"
+            android:text="العنوان : Mohammed"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintEnd_toStartOf="@id/ivMap"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/tvMobile" />
+
+        <ImageView
+            android:id="@+id/ivMap"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_margin="@dimen/dp5"
+            android:src="@drawable/ic_map"
+            app:layout_constraintBottom_toBottomOf="@id/tvAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvAddress" />
+
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp5"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:padding="@dimen/dp5"
+            android:text="نوع الحساب : Mohammed"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

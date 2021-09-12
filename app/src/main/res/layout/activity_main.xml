@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:padding="@dimen/dp5">
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp40"
+            android:background="@drawable/search_shape"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/dp10"
+            android:gravity="center|start"
+            android:hint="@string/write_something"
+            android:padding="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivCart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/ivCart"
+            android:layout_width="?actionBarSize"
+            android:layout_height="@dimen/dp40"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_cart"
+            android:tint="@color/gry"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/redDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_dot"
+            android:tint="#E9F10009"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/ivCart"
+            app:layout_constraintTop_toTopOf="@id/ivCart"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+
+           />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/maineFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_view"
+        android:layout_below="@+id/TopBar" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        android:backgroundTint="@color/white"
+        app:itemIconTint="@drawable/button_selected"
+        app:itemTextColor="@drawable/button_selected"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

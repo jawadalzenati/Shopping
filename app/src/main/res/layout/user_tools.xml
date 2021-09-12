@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp10"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvMyBalance"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginBottom="@dimen/dp2"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_money"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/dp5"
+        android:padding="@dimen/dp10"
+        android:text="@string/MyBalance"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEarn"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_ern"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:text="@string/earn"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvAddEditAddress"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginBottom="@dimen/dp2"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_map"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/dp2"
+        android:padding="@dimen/dp10"
+        android:text="@string/add_EditAddress"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMyList"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_fav"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:text="@string/favList"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/tvShareApp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_share"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:text="@string/ShareApp"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRateApp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_star"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:text="@string/RateApp"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_privacy"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:text="@string/policy"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvCallUs"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_support"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:text="@string/call"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    tools:context=".SubActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48">
+
+        <TextView
+            android:id="@+id/tvPageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:gravity="center"
+            android:text="@string/Category"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivBack"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/allCategory"
+                android:textColor="@color/gry"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAllCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp2"
+                android:background="@color/yellow"
+                android:layout_marginStart="@dimen/dp2"
+                app:layout_constraintStart_toEndOf="@id/tv2"
+                app:layout_constraintTop_toTopOf="@id/tv2"
+                app:layout_constraintBottom_toBottomOf="@id/tv2"
+              />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/allProduct"
+                android:textColor="@color/gry"
+                app:layout_constraintTop_toBottomOf="@id/rvAllCategory" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAllProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv2"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

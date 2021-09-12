@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:id="@+id/tvPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:gravity="center"
+        android:text="@string/Edit"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/just"
+        android:textColor="@color/gry"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="true"
+        android:fillViewport="true"
+        android:padding="@dimen/dp10"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtProductName"
+                android:layout_width="0dp"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center"
+                android:hint="@string/Product_Name"
+                android:inputType="text"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp18"
+                app:layout_constraintEnd_toStartOf="@id/txtProductPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtProductPrice"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center"
+                android:hint="@string/price"
+                android:inputType="numberDecimal"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:padding="@dimen/dp2"
+                android:spinnerMode="dropdown"
+                android:textDirection="rtl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtProductName" />
+
+            <Spinner
+                android:id="@+id/spSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:padding="@dimen/dp2"
+                android:spinnerMode="dropdown"
+                android:textDirection="rtl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spCategory" />
+
+            <EditText
+                android:id="@+id/txtProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp120"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/Product_Discreption"
+                android:maxLength="80"
+                android:padding="@dimen/dp5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spSubCategory" />
+
+            <EditText
+                android:id="@+id/txtProductColor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/ProductColor"
+                android:padding="@dimen/dp5"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtProductDescription" />
+
+            <EditText
+                android:id="@+id/txtProductSize"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/ProductSize"
+                android:padding="@dimen/dp5"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtProductColor" />
+
+            <TextView
+                android:id="@+id/tvOthers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:text="@string/otherDiscrop"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/txtProductSize" />
+
+
+            <EditText
+                android:id="@+id/txtDiscrop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/Product_Disrp"
+                android:minHeight="@dimen/dp48"
+                android:padding="@dimen/dp5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOthers" />
+
+            <EditText
+                android:id="@+id/txtDiscrop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/Product_Disrp"
+                android:minHeight="@dimen/dp48"
+                android:padding="@dimen/dp5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDiscrop1" />
+
+            <EditText
+                android:id="@+id/txtDiscrop3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/Product_Disrp"
+                android:minHeight="@dimen/dp48"
+                android:padding="@dimen/dp5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDiscrop2" />
+
+            <EditText
+                android:id="@+id/txtDiscrop4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/Product_Disrp"
+                android:minHeight="@dimen/dp48"
+                android:padding="@dimen/dp5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDiscrop3" />
+
+            <EditText
+                android:id="@+id/txtDiscrop5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/Product_Disrp"
+                android:minHeight="@dimen/dp48"
+                android:padding="@dimen/dp5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDiscrop4" />
+
+
+            <Button
+                android:id="@+id/btnEditProduct"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:backgroundTint="@color/yellow"
+                android:padding="@dimen/dp5"
+                android:text="@string/Edit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDiscrop5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

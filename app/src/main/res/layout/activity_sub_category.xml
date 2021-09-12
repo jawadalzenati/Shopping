@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    tools:context=".SubCategoryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/edit_text_shape_with_edg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvPageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:gravity="center"
+                android:text="@string/addSubCategory"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+
+            <ImageView
+                android:id="@+id/ivCategoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp220"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:src="@drawable/ic_picture"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCategoryImage"
+                app:layout_constraintEnd_toEndOf="@+id/ivCategoryImage"
+                app:layout_constraintStart_toStartOf="@+id/ivCategoryImage"
+                app:layout_constraintTop_toTopOf="@+id/ivCategoryImage" />
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/add_image"
+                android:textColor="@color/gry"
+                app:layout_constraintTop_toBottomOf="@+id/ivAdd"
+                tools:layout_editor_absoluteX="10dp" />
+
+
+            <Spinner
+                android:id="@+id/spMainCategory"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/CategoryName"
+                android:inputType="text"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCategoryImage" />
+
+            <EditText
+                android:id="@+id/txtSubCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:hint="@string/CategoryName"
+                android:inputType="text"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spMainCategory" />
+
+            <Button
+                android:id="@+id/btnAddNewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:backgroundTint="@color/yellow"
+                android:text="@string/addSubCategory"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18"
+                app:layout_constraintTop_toBottomOf="@+id/txtSubCategoryName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

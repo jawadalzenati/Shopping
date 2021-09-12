@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.doctoror.geocoder:library:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a62605eef8176c477e35240ee01bc88/jetified-library-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a62605eef8176c477e35240ee01bc88/jetified-library-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a62605eef8176c477e35240ee01bc88/jetified-library-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7da4b8679e12e083dd3234828de4879f/jetified-library-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7da4b8679e12e083dd3234828de4879f/jetified-library-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7da4b8679e12e083dd3234828de4879f/jetified-library-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d4685e335f0d409969dd7064b8e62c8f/jetified-library-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d4685e335f0d409969dd7064b8e62c8f/jetified-library-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d4685e335f0d409969dd7064b8e62c8f/jetified-library-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.doctoror.geocoder/library/1.0.0/4f967263c41e17767db3878e304cba38d05be57f/library-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.doctoror.geocoder/library/1.0.0/8839bfd0583eb764fec63fc425763d546d93425c/library-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="@dimen/dp5">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp2"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="@dimen/dp2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/name"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/email"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+            <TextView
+                android:id="@+id/tvPhones"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/Phone"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/date"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintTop_toBottomOf="@id/tvPhones" />
+
+            <TextView
+                android:id="@+id/tvCurrentBalance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/currentBalance"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/amounts"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tvCurrentBalance" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp10"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:backgroundTint="@color/yellow"
+                android:gravity="center"
+                android:text="@string/sned"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAmount" />
+
+
+
+            <ImageView
+                android:id="@+id/ivSend"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:padding="@dimen/dp2"
+                android:visibility="gone"
+                android:src="@drawable/ic_correct"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    tools:context=".PayActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:gravity="center"
+        android:text="@string/completePay"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="center|start"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginEnd="@dimen/dp5"
+            android:text="@string/totalPrice"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/red"
+            android:text="0.0$"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginEnd="@dimen/dp5"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/rgPaymentMethods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10">
+
+
+            <RadioButton
+                android:id="@+id/rbPayPall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:drawableStart="@drawable/ic_paypal"
+                android:drawablePadding="@dimen/dp5"
+                android:padding="@dimen/dp10"
+                android:text="@string/payPall"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp5"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp16" />
+
+            <RadioButton
+                android:id="@+id/rbBalance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp5"
+                android:drawableStart="@drawable/ic_money"
+                android:drawablePadding="@dimen/dp5"
+                android:padding="@dimen/dp10"
+                android:text="@string/pyBalance"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp16" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="end"
+            android:gravity="center|end"
+            android:paddingStart="@dimen/dp5"
+            android:paddingEnd="@dimen/dp5"
+            android:text="@string/cancelPay"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp14"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/edit_text_shape_with_edg"
+            android:backgroundTint="@color/yellow"
+            android:text="@string/completePay"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

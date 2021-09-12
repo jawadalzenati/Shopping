@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp2">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCard"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:civ_border_color="@color/dark_gry"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toTopOf="@id/tvName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/categoryName"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp10"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

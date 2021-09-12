@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    android:padding="@dimen/dp5">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp120"
+        android:elevation="@dimen/dp2"
+        app:cardCornerRadius="@dimen/dp2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/setCheek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivProductImage"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp120"
+                android:layout_marginBottom="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_clothes_icon"
+                app:layout_constraintStart_toEndOf="@id/setCheek"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp30"
+                android:layout_marginStart="@dimen/dp5"
+                android:gravity="center|start"
+                android:padding="@dimen/dp2"
+                android:text="@string/Product_Name"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivProductImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvProductDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/orderDetails"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBottom_toTopOf="@id/tvProductPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivProductImage"
+                app:layout_constraintTop_toBottomOf="@id/tvProductName"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="?actionBarSize"
+                android:layout_height="@dimen/dp30"
+                android:gravity="center"
+                android:text="10$"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivProductImage" />
+
+
+            <ImageView
+                android:id="@+id/ivRemoveCart"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_marginEnd="@dimen/dp2"
+                android:padding="@dimen/dp2"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_delete"
+                android:tint="@color/gry"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

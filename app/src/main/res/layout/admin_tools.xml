@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/lyAdminTools"
+    android:visibility="gone"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAddNewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:text="@string/add_category"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/gry"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:drawableStart="@drawable/ic_squares"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableEnd="@drawable/ic_arrow" />
+    <TextView
+        android:id="@+id/tvAddSubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:text="@string/tvAddSubCategory"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/gry"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:drawableStart="@drawable/ic_sub"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableEnd="@drawable/ic_arrow" />
+
+
+
+    <TextView
+        android:id="@+id/tvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:text="@string/users"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/gry"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableEnd="@drawable/ic_arrow" />
+
+    <TextView
+        android:id="@+id/tvًWithdraw"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:text="@string/withdrawOrder"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/gry"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:drawableStart="@drawable/ic_withdraw"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableEnd="@drawable/ic_arrow" />
+
+    <TextView
+        android:id="@+id/tvAddNumber"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:text="@string/addWhatsaap"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/gry"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp5"
+        android:drawableStart="@drawable/ic_whatsapp_number"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableEnd="@drawable/ic_arrow" />
+
+
+
+
+
+</LinearLayout>

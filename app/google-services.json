@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "267642336727",
+    "project_id": "josalla",
+    "storage_bucket": "josalla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267642336727:android:f6d5d67b0b4b31fb638792",
+        "android_client_info": {
+          "package_name": "com.josalla.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267642336727-st1pj8q1mrae6jak2mhlpjkjr07dcknr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.josalla.store",
+            "certificate_hash": "b97c2c69c81b9ab041cb54a0eb7fd38010365e94"
+          }
+        },
+        {
+          "client_id": "267642336727-76l1b9b505k74iddugoh4magj9k1ii90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDidhRzmkRGnSvnH94jz3vPjFPyHBU3Seg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267642336727-76l1b9b505k74iddugoh4magj9k1ii90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

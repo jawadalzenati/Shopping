@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    tools:context=".OrderConfirmActivity">
+
+    <TextView
+        android:id="@+id/tvPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center"
+        android:text="@string/OrderConfirm"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/dp10"
+        app:layout_constraintBottom_toTopOf="@+id/btnComplete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:gravity="center|start"
+                android:text="@string/details"
+                android:textColor="@color/gry"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp48"
+                android:gravity="center|end"
+                android:text="@string/orderNumber"
+                android:textColor="@color/gry"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivOrderImage"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:src="@drawable/image1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv" />
+
+            <TextView
+                android:id="@+id/tvOrderPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp10"
+                android:text="@string/price"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivOrderImage"
+                app:layout_constraintTop_toTopOf="@id/ivOrderImage" />
+
+            <TextView
+                android:id="@+id/tvSizeColor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp10"
+                android:text="@string/size"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBottom_toTopOf="@id/tvOrderCount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivOrderImage"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrderPrice" />
+
+            <TextView
+                android:id="@+id/tvOrderCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp10"
+                android:text="@string/caount"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBottom_toBottomOf="@id/ivOrderImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivOrderImage" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/dark_gry"
+                app:layout_constraintTop_toBottomOf="@id/tvOrderCount" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/orderDate"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintEnd_toStartOf="@id/tvOrderDate"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/tvOrderDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:text="@string/date"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvDate" />
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/LeaveFeedback"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrderDate" />
+
+            <RatingBar
+                android:id="@+id/rbLeaveFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center|start"
+                android:numStars="5"
+                android:text="@string/user_name"
+                android:textColor="@color/gry"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/LeaveTextFeedback"
+                android:textColor="@color/gry"
+                android:visibility="visible"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rbLeaveFeedback" />
+
+
+
+            <EditText
+                android:id="@+id/txtFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@drawable/edit_text_shape_with_edg"
+                android:gravity="center"
+                android:hint="@string/LeaveTextFeedback"
+                android:maxLength="80"
+                android:textSize="@dimen/sp14"
+                android:text="@string/GoodFeedback"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv5" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/dark_gry"
+                app:layout_constraintTop_toBottomOf="@id/txtFeedback" />
+
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/suggestions"
+                android:textColor="@color/gry"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <ImageView
+                android:id="@+id/ivWhatsApp"
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/ic_whatsapp"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivFacebook"
+                app:layout_constraintTop_toBottomOf="@id/tv6" />
+
+            <ImageView
+                android:id="@+id/ivFacebook"
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/ic_facebook"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv6" />
+
+            <ImageView
+                android:id="@+id/ivCall"
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/ic_call"
+                app:layout_constraintEnd_toStartOf="@id/ivFacebook"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv6" />
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/dark_gry"
+                app:layout_constraintTop_toBottomOf="@id/ivWhatsApp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/OrderConfirm"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCancelOrder"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelOrder"
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:backgroundTint="@color/gry"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

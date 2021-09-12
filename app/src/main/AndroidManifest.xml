@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.josalla.store">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name=".utils.AppController"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TwitterActivity"
+            android:exported="true" />
+        <activity android:name=".UsingMobileActivity" />
+        <activity android:name=".PayActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".TransactionsActivity" />
+        <activity android:name=".MyOrderDetailsActivity" />
+        <activity android:name=".EranActivity" />
+        <activity android:name=".WithdrawListActivity" />
+        <activity
+            android:name=".WithdrawActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".AddBalanceActivity" />
+        <activity android:name=".BalanceActivity" />
+        <activity android:name=".SubActivity" />
+        <activity
+            android:name=".SubCategoryActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".AllUsersActivity" />
+        <activity android:name=".SendNotificationsActivity" />
+        <activity android:name=".PolicyActivity" />
+        <activity android:name=".AllRateActivity" />
+        <activity android:name=".NoConectionActivity" />
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.novoda.merlin.MerlinService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_cart" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/gry" />
+
+        <activity android:name=".OrderConfirmActivity" />
+        <activity android:name=".OffersActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".FavoriteActivity" />
+        <activity
+            android:name=".EditActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".EditProductActivity" />
+        <activity android:name=".OrderDetailsActivity" />
+        <activity android:name=".OrdersActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".CompleteOrderActivity" />
+        <activity android:name=".SingInActivity" />
+        <activity android:name=".AddressActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AllSizeActivity" />
+        <activity android:name=".FullImageScreenActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".ProductsPerCategoryActivity" />
+        <activity
+            android:name=".AddProductActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddNewCategryActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+        <service
+            android:name=".service.AppService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

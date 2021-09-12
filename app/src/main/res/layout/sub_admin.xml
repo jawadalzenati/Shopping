@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/light_gry"
+    android:id="@+id/sub_admin_tools"
+    android:visibility="gone"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAllOrder"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_orders"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:padding="@dimen/dp10"
+        android:text="@string/allOrder"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18" />
+
+    <TextView
+        android:id="@+id/tvSendNotification"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_notification"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center|start"
+        android:layout_marginBottom="@dimen/dp5"
+        android:padding="@dimen/dp10"
+        android:text="@string/tvSendNotification"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18" />
+
+</LinearLayout>

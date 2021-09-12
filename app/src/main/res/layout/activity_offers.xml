@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    tools:context=".OffersActivity">
+
+    <TextView
+        android:id="@+id/tvPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:gravity="center"
+        android:text="@string/AddNewOffer"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ivOfferImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/SliderWidth"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp5"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPageTitle" />
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp5"
+        android:src="@drawable/ic_picture"
+        app:layout_constraintBottom_toBottomOf="@+id/ivOfferImage"
+        app:layout_constraintEnd_toEndOf="@+id/ivOfferImage"
+        app:layout_constraintStart_toStartOf="@+id/ivOfferImage"
+        app:layout_constraintTop_toTopOf="@+id/ivOfferImage" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp5"
+        android:gravity="center"
+        android:text="@string/add_image_offer"
+        android:textColor="@color/gry"
+        app:layout_constraintTop_toBottomOf="@+id/ivAdd"
+        tools:layout_editor_absoluteX="10dp" />
+
+
+    <EditText
+        android:id="@+id/txtNewPrice"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp5"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:hint="@string/add_newPrice"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/dp5"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivOfferImage" />
+
+    <Spinner
+        android:id="@+id/spOfferSlide"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/sp10"
+        android:layout_marginEnd="@dimen/dp5"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:entries="@array/ImageNumber"
+        app:layout_constraintTop_toBottomOf="@id/txtNewPrice"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/btnAddOffer"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp5"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:backgroundTint="@color/yellow"
+        android:padding="@dimen/dp5"
+        android:text="@string/AddNewOffer"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintTop_toBottomOf="@+id/spOfferSlide" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

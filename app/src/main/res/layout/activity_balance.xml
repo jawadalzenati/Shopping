@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gry"
+    android:layoutDirection="rtl"
+    tools:context=".BalanceActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:gravity="center"
+        android:text="@string/MyBalance"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMore"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddBalance"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/edit_text_shape_with_edg"
+        android:backgroundTint="@color/yellow"
+        android:drawableStart="@drawable/ic_money"
+        android:drawablePadding="@dimen/dp5"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp5"
+        android:paddingEnd="@dimen/dp5"
+        android:text="@string/add_balance"
+        android:textColor="@color/gry"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutDirection="rtl"
+        android:padding="@dimen/dp10"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddBalance"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack">
+
+        <View
+            android:id="@+id/viewCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/card_shape"
+            app:layout_constraintBottom_toTopOf="@id/view"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@+id/viewCard2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/back"
+            app:layout_constraintBottom_toTopOf="@id/view"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="@string/currentBalance"
+            android:textColor="@color/gry"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvCurrentBalance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCurrentBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:gravity="center"
+            android:textSize="@dimen/sp42"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="@id/viewCard"
+            app:layout_constraintEnd_toEndOf="@id/viewCard"
+            app:layout_constraintStart_toStartOf="@id/viewCard"
+            app:layout_constraintTop_toTopOf="@id/viewCard" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp18"
+            android:text="$"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/dp10"
+            app:layout_constraintBottom_toBottomOf="@id/tvCurrentBalance"
+            app:layout_constraintStart_toEndOf="@id/tvCurrentBalance"/>
+
+        <TextView
+            android:id="@+id/tvWithdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:text="@string/withdrawBalance"
+            android:gravity="center"
+            android:textColor="@color/gry"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp14"
+            android:layout_margin="@dimen/dp5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/viewCard"
+           />
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

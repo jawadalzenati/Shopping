@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCard"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBell"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_bell_notifi"
+            android:padding="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:text="@string/title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivBell"
+            android:layout_marginStart="@dimen/dp10"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/gry"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintStart_toEndOf="@id/ivBell"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/dp10"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/gry"
+            android:text="@string/send_code" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
